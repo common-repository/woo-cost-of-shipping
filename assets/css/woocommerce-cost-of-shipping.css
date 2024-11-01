@@ -1,0 +1,61 @@
+/**
+ * WooCommerce Cost of Shipping
+ * https://www.theritesites.com/plugins/woocomerce-cost-of-shipping
+ *
+ * This plugin can be expanded into net profit reporting by getting the WooCommerce Net Profit plugin
+ * developed by TheRiteSites and found at https://www.theritesites.com/plugins/woocommerce-net-profit 
+ * 
+ * Copyright (c) 2018 TheRiteSites
+ * Licensed under the GPLv2+ license.
+ */
+
+#shipping-cost {
+    position: relative;
+}
+
+.edit-shipping-tooltip {
+    position: absolute;
+    background-color: #23282D;
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: 2px 4px 3px 4px rgba(0,0,0,.2);
+    padding: 4px;
+    right: -2em;
+    top: 2em;
+    z-index: 2;
+}
+
+.edit-shipping-buttons {
+    margin-top: 4px;
+}
+
+#edit-shipping-save {
+    width: 64px;
+    margin-left: 5%;
+}
+
+.edit-shipping-tooltip:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 65%;
+    right: 0;
+    margin: 0 auto;
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #23282D;
+}
+
+#wcs-shipping-re-import {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#wcs-shipping-import {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
